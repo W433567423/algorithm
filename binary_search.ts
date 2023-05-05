@@ -6,16 +6,16 @@
 */
 const arr: Array<number> = [1, 5, 6, 7, 11, 15, 24, 44, 47, 80]
 const binary_search = (arr: Array<number>, num: number) => {
-  let low: number = 0
-  let high: number = arr.length - 1
-  let mid: number
-  while (low <= high) {
-    mid = Math.floor((low + high) / 2)
-    let guess: number = arr[mid]
-    if (guess === num) return mid
-    else if (arr[mid] < num) low = mid + 1
-    else high = mid - 1
-  }
+	let low: number = 0
+	let high: number = arr.length - 1
+	let mid: number
+	while (low <= high) {
+		mid = Math.floor((low + high) / 2)
+		let guess: number = arr[mid]
+		if (guess === num) return mid
+		else if (arr[mid] < num) low = mid + 1
+		else high = mid - 1
+	}
 }
 
 console.log(`下标为${binary_search(arr, 11) || null}`)
