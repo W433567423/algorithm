@@ -21,3 +21,5 @@ const binary_search = (arr: Array<number>, num: number) => {
 console.log(`下标为${binary_search(arr, 11) || null}`)
 console.log(`下标为${binary_search(arr, 14) || null}`)
 console.log(`下标为${binary_search(arr, 24) || null}`)
+
+export {}
