@@ -13,7 +13,8 @@ const quick_sort = (arr: Array<number>): Array<number> => {
 		const pivot = arr[0]
 		for (const i of arr.slice(1)) if (i <= pivot) less.push(i)
 		for (const i of arr.slice(1)) if (i > pivot) more.push(i)
+		console.log('----------', less, pivot, more)
 		return quick_sort(less).concat([pivot]).concat(quick_sort(more))
 	}
 }
-console.log(quick_sort([5, 3, 6, 2, 10, 9, 24, 15, 11]))
+console.log('排序后的结构为', quick_sort([5, 3, 6, 2, 10, 9, 24, 15, 11]))
