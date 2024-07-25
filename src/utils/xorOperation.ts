@@ -2,7 +2,7 @@
 // 2. 满足交换律与结合律
 
 // 可以两数相同但内存不能相同
-const swap = (a: number, b: number) => {
+export const swap = (a: number, b: number) => {
 	console.log('🚀 ~ swap ~ a,b:', a, b) // 101 111
 	a = a ^ b // 010
 	b = a ^ b // 101
