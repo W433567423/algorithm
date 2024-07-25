@@ -4,7 +4,6 @@ const binaryFind = (nums: number[], target: number): number => {
 	let right = nums.length - 1
 	while (left <= right) {
 		const midIndex = Math.floor((right - left) / 2) + left
-		console.log(left, right, midIndex)
 
 		if (nums[midIndex] === target) {
 			return midIndex
@@ -25,7 +24,6 @@ const binaryFindMore = (nums: number[], target: number): number => {
 	let right = nums.length - 1
 	while (left <= right) {
 		const midIndex = Math.floor((right - left) / 2) + left
-		console.log(left, right, midIndex)
 
 		if (nums[midIndex] >= target) {
 			right = midIndex - 1
