@@ -48,4 +48,4 @@ const find2 = (arr: number[]): { x: number; y: number } => {
 	// y:不同x的另一个数
 	return { x, y }
 }
-console.log(find2([1, 2]))
+console.log(find2(arr2))
