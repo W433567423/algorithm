@@ -2,9 +2,8 @@
 	"name": "algorithm",
 	"version": "1.0.0",
 	"main": "src/main.ts",
-	"type": "module",
 	"scripts": {
-		"test": "ts-node src/main.ts"
+		"test": "clear && ts-node src/main.ts"
 	},
 	"keywords": [],
 	"author": "",
