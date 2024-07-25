@@ -1,4 +1,4 @@
-import { swap } from '@/utils'
+import { runAndGetTime, swap } from '@/utils'
 /**
  * DONE
  * @description 选择排序
@@ -18,6 +18,6 @@ const selectionSort = (arr: number[]): number[] => {
 		}
 		swap(arr, i, minIndex)
 	}
-
-	return []
+	return arr
 }
+runAndGetTime(selectionSort)
