@@ -20,4 +20,5 @@ const selectionSort = (arr: number[]): number[] => {
 	}
 	return arr
 }
+// 时间复杂度O(n^2)，空间复杂度O(1)
 runAndGetTime(selectionSort)
