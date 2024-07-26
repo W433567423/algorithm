@@ -7,7 +7,7 @@ const swap = (arr: number[], i: number, minIndex: number) => {
 	arr[minIndex] = temp
 }
 console.log('开始生成随机数组')
-const arr = mockArray(999999, 1000000)
+const arr = mockArray(100000, 1000000)
 const rightSortArr = arr.sort()
 console.log('生成随机数组完毕，并已获得排序成功数组\n')
 

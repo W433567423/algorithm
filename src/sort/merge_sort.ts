@@ -1,5 +1,3 @@
-import { mockArray } from '@/mock/array'
-
 /**
  * DONE
  * @description 归并排序
@@ -8,7 +6,7 @@ import { mockArray } from '@/mock/array'
  * @param {number[]} arr
  * @return {number[]}
  */
-const arr = mockArray(20, 99)
+// const arr = mockArray(20, 99)
 // const arr = [2, 1]
 export const merge_sort = (arr: number[], l: number, r: number) => {
 	if (l >= r) {
