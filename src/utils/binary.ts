@@ -39,7 +39,6 @@ const binaryFindMore = (nums: number[], target: number): number => {
 // console.log(binaryFindMore([1, 1, 1, 1, 2, 2, 2, 3], 3))
 
 // 局部最小值问题
-
 // 找最大值
 const arr3 = mockArray(20, 99)
 const binaryFindMax = (arr: number[], i: number, j: number): number => {
@@ -52,5 +51,11 @@ const binaryFindMax = (arr: number[], i: number, j: number): number => {
 		return Math.max(leftMax, rightMax)
 	}
 }
+console.log('🚀 ~ arr3:', arr3)
+console.log(`max:${binaryFindMax(arr3, 0, 19)}`)
 
-console.log(`${arr3},\nmax:${binaryFindMax(arr3, 0, 19)}`)
+// master公式
+// T(N)=a*T(N/b)+O(N^d)
+// 1. log(b,a)>d => 复杂度为O(N^log(b,a))
+// 2. log(b,a)=d => 复杂度为O(N^d*logN)
+// 3. log(b,a)<>>d => 复杂度为O(N^d)

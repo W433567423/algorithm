@@ -7,7 +7,11 @@
  * @param {number} maxValue 数组最大值
  * @param {number} minValue 数组最小值
  */
-const mockArray = (maxSize: number, maxValue: number, minValue?: number) => {
+const mockArray = (
+	maxSize: number,
+	maxValue: number,
+	minValue?: number
+): number[] => {
 	if (!minValue) minValue = -maxValue
 	const arr = new Array(maxSize)
 	for (let i = 0; i < maxSize; i++) {
