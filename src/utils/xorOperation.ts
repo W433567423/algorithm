@@ -25,7 +25,7 @@ const find1 = (arr: number[]): number => {
 console.log(find1(arr1))
 
 // 在时间复杂度为O(n),空间复杂度为O(1)的情况下
-// 数组中有切仅有两个数出现奇数次,找出这两个数
+// 数组中有且仅有两个数出现奇数次(其余出现偶数次),找出这两个数
 const arr2 = [83, 1, 2, 5, 8, 46, 5, 1, 2, 83]
 const find2 = (arr: number[]): { x: number; y: number } => {
 	console.log('\n\n数组为:', arr)
@@ -48,4 +48,4 @@ const find2 = (arr: number[]): { x: number; y: number } => {
 	// y:不同x的另一个数
 	return { x, y }
 }
-console.log(find2(arr2))
+console.log(find2(arr2)) // { x: 8, y: 46 }

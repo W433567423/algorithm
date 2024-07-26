@@ -1,6 +1,6 @@
-import { outOfOrderArray } from './mock/array'
+import { mockArray } from './mock/array'
 const main = () => {
-	const arr = outOfOrderArray
+	const arr = mockArray(9999, 9999)
 	// 开始时间
 	const startTime = new Date().getTime()
 	arr.sort((a, b) => a - b)
