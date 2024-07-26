@@ -1,3 +1,5 @@
+import { mockArray } from '@/mock/array'
+
 // 在一个有序数组中，找某个数是否存在 时间复杂度O(log2 n)
 const binaryFind = (nums: number[], target: number): number => {
 	let left = 0
@@ -15,8 +17,8 @@ const binaryFind = (nums: number[], target: number): number => {
 	}
 	return -1
 }
-console.log(binaryFind([1, 5, 6, 31, 55, 56, 88, 89, 99], 6))
-console.log(binaryFind([1, 5, 6, 31, 55, 56, 88, 89, 99], 7))
+// console.log(binaryFind([1, 5, 6, 31, 55, 56, 88, 89, 99], 6))
+// console.log(binaryFind([1, 5, 6, 31, 55, 56, 88, 89, 99], 7))
 
 // 在一个有序数组中，找>=某个数最左侧的位置
 const binaryFindMore = (nums: number[], target: number): number => {
@@ -34,6 +36,21 @@ const binaryFindMore = (nums: number[], target: number): number => {
 	return left
 }
 
-console.log(binaryFindMore([1, 1, 1, 1, 2, 2, 2, 3], 3))
+// console.log(binaryFindMore([1, 1, 1, 1, 2, 2, 2, 3], 3))
 
 // 局部最小值问题
+
+// 找最大值
+const arr3 = mockArray(20, 99)
+const binaryFindMax = (arr: number[], i: number, j: number): number => {
+	if (i === j) {
+		return arr[i]
+	} else {
+		const mid = (i + (j - 1)) >> 1
+		const leftMax = binaryFindMax(arr, i, mid)
+		const rightMax = binaryFindMax(arr, mid + 1, j)
+		return Math.max(leftMax, rightMax)
+	}
+}
+
+console.log(`${arr3},\nmax:${binaryFindMax(arr3, 0, 19)}`)
