@@ -1,5 +1,4 @@
 import { mockArray } from '@/mock/array'
-import { runAndGetTime } from '@/utils'
 
 /**
  * DONE
@@ -11,7 +10,7 @@ import { runAndGetTime } from '@/utils'
  */
 const arr = mockArray(20, 99)
 // const arr = [2, 1]
-const merge_sort = (arr: number[], l: number, r: number): void => {
+export const merge_sort = (arr: number[], l: number, r: number) => {
 	if (l >= r) {
 		return
 	}
@@ -42,10 +41,10 @@ const merge = (arr: number[], l: number, mid: number, r: number) => {
 }
 
 // console.log('🚀 ~ arr2:', arr)
-const f = (arr: number[]) => {
-	merge_sort(arr, 0, arr.length - 1)
-}
+// const f = (arr: number[]) => {
+// 	merge_sort(arr, 0, arr.length - 1)
+// }
 // 递归二分，以此类推
 // 时间复杂度O(nlogn)，空间复杂度O(n)
 
-runAndGetTime(f as any)
+// runAndGetTime(f as any)

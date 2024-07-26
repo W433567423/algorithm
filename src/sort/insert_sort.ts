@@ -1,4 +1,4 @@
-import { runAndGetTime, swap } from '@/utils'
+import { swap } from '@/utils'
 /**
  * DONE
  * @description 插入排序
@@ -7,7 +7,7 @@ import { runAndGetTime, swap } from '@/utils'
  * @param {number[]} arr
  * @return {number[]}
  */
-const insertSort = (arr: number[]): number[] => {
+export const insertSort = (arr: number[]): number[] => {
 	if (arr === null || arr.length < 2) {
 		return arr
 	}
@@ -21,4 +21,4 @@ const insertSort = (arr: number[]): number[] => {
 // 将第n个数往前排序好的地方插入
 // 时间复杂度O(n ^ 2)，空间复杂度O(1)
 // 某些情况优于冒泡选择
-runAndGetTime(insertSort)
+// runAndGetTime(insertSort)

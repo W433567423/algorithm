@@ -1,4 +1,4 @@
-import { runAndGetTime, swap } from '@/utils'
+import { swap } from '@/utils'
 /**
  * DONE
  * @description 选择排序
@@ -7,7 +7,7 @@ import { runAndGetTime, swap } from '@/utils'
  * @param {number[]} arr
  * @return {number[]}
  */
-const selectionSort = (arr: number[]): number[] => {
+export const selectionSort = (arr: number[]): number[] => {
 	if (arr === null || arr.length < 2) {
 		return arr
 	}
@@ -22,4 +22,4 @@ const selectionSort = (arr: number[]): number[] => {
 }
 // 选出最小的放在最前，以此类推
 // 时间复杂度O(n ^ 2)，空间复杂度O(1)
-runAndGetTime(selectionSort)
+// runAndGetTime(selectionSort)

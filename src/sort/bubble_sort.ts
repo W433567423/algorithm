@@ -1,4 +1,4 @@
-import { runAndGetTime, swap } from '@/utils'
+import { swap } from '@/utils'
 /**
  * DONE
  * @description 冒泡排序
@@ -7,7 +7,7 @@ import { runAndGetTime, swap } from '@/utils'
  * @param {number[]} arr
  * @return {number[]}
  */
-const bubbleSort = (arr: number[]): number[] => {
+export const bubbleSort = (arr: number[]): number[] => {
 	if (arr === null || arr.length < 2) {
 		return arr
 	}
@@ -22,4 +22,4 @@ const bubbleSort = (arr: number[]): number[] => {
 }
 // 比较两个相邻的交换
 // 时间复杂度O(n^2)，空间复杂度O(1)
-runAndGetTime(bubbleSort)
+// runAndGetTime(bubbleSort)
