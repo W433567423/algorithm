@@ -12,8 +12,10 @@ const mockArray = (
 	maxValue: number,
 	minValue?: number
 ): number[] => {
-	console.log(`数据量为10^${maxSize.toString().length}`)
 	if (!minValue) minValue = -maxValue
+	console.log(
+		`数据量为10^${maxSize.toString().length},数据范围为${minValue}~${maxValue}`
+	)
 	const arr = new Array(maxSize)
 	for (let i = 0; i < maxSize; i++) {
 		arr[i] = Math.floor(Math.random() * (maxValue - minValue + 1) + minValue)
