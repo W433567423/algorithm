@@ -14,7 +14,9 @@ const mockArray = (
 ): number[] => {
 	if (!minValue) minValue = -maxValue
 	console.log(
-		`数据量为10^${maxSize.toString().length},数据范围为${minValue}~${maxValue}`
+		`数据量为10^${maxSize.toString().length - 1}~10^${
+			maxSize.toString().length
+		}\n数据范围为${minValue}~${maxValue}`
 	)
 	const arr = new Array(maxSize)
 	for (let i = 0; i < maxSize; i++) {
