@@ -19,6 +19,7 @@ export const merge_sort = (arr: number[], l: number, r: number) => {
 	merge_sort(arr, mid + 1, r)
 	merge(arr, l, mid, r)
 }
+// 外排序
 const merge = (arr: number[], l: number, mid: number, r: number) => {
 	const result = new Array(r - l + 1)
 	let i = 0
