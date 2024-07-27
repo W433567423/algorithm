@@ -1,4 +1,4 @@
-import { runAndGetTime } from '@/utils'
+import { runAndGetTime } from '@/utils/rate'
 import { bubbleSort } from './bubble_sort'
 import { insertSort } from './insert_sort'
 import { merge_sort } from './merge_sort'

@@ -1,4 +1,4 @@
-import { swap } from '@/utils'
+import { swap } from '@/utils/rate'
 /**
  * DONE
  * @description 选择排序
